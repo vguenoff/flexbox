@@ -1,14 +1,10 @@
-.vid-02 {
+.vid-05 {
   .container {
-    flex-wrap: wrap;
     display: flex;
-    height: 100vh;
-    border: 10px solid goldenrod;
 
     &__box {
-      width: calc(33.33333333% - 1%);
+      flex: 1;
       padding: 10px;
-      margin: 0.5%;
       color: white;
       font-size: 100px;
       text-align: center;
@@ -16,9 +12,11 @@
 
       // Colours for each box
       &--box1 {
+        order: 7;
         background: #1abc9c;
       }
       &--box2 {
+        order: 2;
         background: #3498db;
       }
       &--box3 {
@@ -34,12 +32,15 @@
         background: #e67e22;
       }
       &--box7 {
+        order: 1;
         background: #e74c3c;
       }
       &--box8 {
+        order: -1;
         background: #bdc3c7;
       }
       &--box9 {
+        order: -2;
         background: #2ecc71;
       }
       &--box10 {
